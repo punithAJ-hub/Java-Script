@@ -16,3 +16,25 @@ function ageConfirm()
 
 
 }
+
+function ageValidator()
+{
+    
+    let reg=new RegExp("[0-100]");
+    let age=document.getElementById("age").value;
+    console.log(age);
+    console.log(reg.test(age))
+
+
+    if(!reg.test(age))
+    {
+        document.getElementById("ageError").innerHTML="Age should be a number";
+    }
+    else{
+        document.getElementById("ageError").innerHTML="";
+    }
+
+    
+
+    
+}
