@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            .elm{
+                color: red;
+            }
+            .elm2{
+                color: yellow;
+            }
+
+
+        </style>
+
+
+    </head>
+
+<body>
+
+
+  <h1>
+      Inbuilt Global object
+  </h1>
+  <label for="name">Enter name</label>
+  <input id="name"><br><br>
+  <label for="age" >Enter age</label>
+  <input id="age" value="" onkeyup="ageValidator()" max="100" min="1"> </input>
+  <p id="ageError" style="color: red;"></p>
+
+  
+  <br>
+  <button type="submit" value="submit" style="height:30px; width: 60px; background-color: blue;" onclick="ageConfirm()"> Submit</button>
+
+  <p id="class1" class="elm1" name="elm1">Dom changes first class1 and changes to 2 using dom object  </p>
+
+  <button onclick="changecolor()" id="b"></button>
+  <p id="class2" class="elm1" name="elm1">Dom changes first class1 and changes to 2 using dom object  </p>
+
+  <p id="date"></p>
+
+  <script src="./DOM.js">
+
+</script>`
+
+</body>
+</html> 
